@@ -1,0 +1,358 @@
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    color: white;
+}
+
+.container .background-division {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .background-division .first-division-blue {
+    position: absolute;
+    background-color: #2D68C4;
+    width: 50%;
+    height: 100%;
+}
+
+.container .background-division .second-division-graywhite {
+    position: absolute;
+    background-color: #E6E6FA;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%; 
+}
+
+.container .front-division {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.container .front-division .first-front-division {
+    background-color: rgba(253, 253, 253, 0.911);
+    width: 80%;
+    height: 80%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;    
+}
+
+.container .front-division .first-front-division .first-inner-circle{
+    position: absolute;
+    background-color: rgba(222, 230, 241, 0.911);
+    width: 33%;
+    height: 70%;
+    margin-top: 25px;
+    margin-left: 45px;
+    border-radius: 50%;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle{
+    position: absolute;
+    background-color: rgba(220, 223, 241, 0.911);
+    width: 80%;
+    height: 85%;
+    margin-top: 30px;
+    margin-left: 45px;
+    border-radius: 50%;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle {
+    position: absolute;
+    background-color: rgba(56, 80, 216, 0.911);
+    width: 75%;
+    height: 75%;
+    margin-top: 45px;
+    margin-left: 45px;
+    border-radius: 50%;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle{
+    position: absolute;
+    background-color: rgba(253, 253, 253, 0.411);
+    width: 300px;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: -15px;
+    border-radius: 8%;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle{
+    position: absolute;
+    background-color: rgba(253, 253, 253, 0.986);
+    width: 280px;
+    height: 85%;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 8%;
+}
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle h5{
+    color: black;
+    padding: 20px 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 90px;
+    font-size: 11px;    
+}
+
+
+/* Donut Chart */
+
+.svg-item {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    animation: donutfade 1s;
+
+}
+
+@keyframes donutfade {
+  /* this applies to the whole svg item wrapper */
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .svg-item {
+        width: 80%;
+    }
+}
+
+.donut-ring {
+    stroke: #EBEBEB;
+}
+
+.donut-segment {
+    transform-origin: center;
+    stroke: #FF6200;
+}
+
+.donut-segment-2 {
+    stroke: rgb(161, 167, 167);
+    animation: donut1 3s;
+}
+
+.donut-percent {
+    animation: donutfadelong 1s;
+}
+
+.donut-text {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #020202;
+}
+
+.donut-percent {
+    font-size: 0.5em;
+    line-height: 1;
+    transform: translateY(0.5em);
+    font-weight: bold;
+}
+
+
+/* ---------- */
+/* just for this presentation */
+html { text-align:center; }
+.svg-item {
+    position: absolute;
+  max-width:30%;
+  display:inline-block;
+  margin-top: 50px;
+  margin-left: -120px
+}
+
+/* End of Donut Chart */
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .donut-chart1 .buttons {
+    position: absolute; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .donut-chart1 .buttons .button1{
+
+    color: blue;
+    font-size: 8px;
+    background-color: #2d67c425;
+    width: 30px;
+    border-radius: 2px;
+    border: 1px solid #2d67c425;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .donut-chart1 .buttons .button2{
+    color: green;
+    font-size: 8px;
+    margin-left: 3px;
+    width: 30px;
+    background-color: rgba(0, 128, 0, 0.096);
+    border-radius: 2px;
+    border: 1px solid rgba(0, 128, 0, 0.096);
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .donut-chart1 .buttons .button3{
+    color: rgb(248, 157, 172);
+    font-size: 8px;
+    margin-left: 3px;
+    background-color: #f017f01f;
+    border-radius: 2px;
+    border: 1px solid #f017f01f;
+    width: 30px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .hours{
+    position: absolute;
+    font-size: 10px;
+    margin-left: 120px;
+    margin-top: 40px;
+    background-color: #f0eaf01f;
+    border-radius: 2px;
+    border: 1px solid #e2d7e21f;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .hours p{
+    position: absolute;
+    color: gray;
+    font-size: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+  
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .hours h4{
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+  
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .hours i{
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+  
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .budgets{
+    position: absolute;
+    font-size: 10px;
+    margin-left: 120px;
+    margin-top: 110px;
+    background-color: #f0eaf01f;
+    border-radius: 2px;
+    border: 1px solid #f0eaf01f;
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .budgets .bug1{
+    position: absolute;
+    color: gray;
+    font-size: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .budgets h4{
+    position: absolute;
+    color: black;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .budgets .btn1{
+    position: absolute;
+    color: black;
+    font-size: 8px;
+    margin-left: -65px;
+    margin-top: 50px;
+    width: 30px;
+    height: 12px;
+    background-color: rgba(151, 233, 192, 0.616);
+    border: 1px solid rgba(151, 233, 192, 0.616);
+    border-radius: 3px;
+}
+
+.container .front-division .first-front-division .first-inner-circle .second-inner-circle .third-inner-circle .first-radius-rectangle .second-radius-rectangle .budgets .bug2{
+    position: absolute;
+    color: gray;
+    font-size: 8px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.container .front-division .first-front-division .account-form{
+   position: absolute;
+   height: 440px;
+   width: 350px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 650px;
+   border-radius: 20px;
+   background-color: rgba(222, 230, 241, 0.911);
+}
+
+.container .front-division .first-front-division .account-form h4{
+
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container .front-division .first-front-division .account-form .free-easy{
+
+    color: black;
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.container .front-division .first-front-division .account-form input[type="text"] {
+
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
