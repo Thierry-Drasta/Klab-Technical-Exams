@@ -340,19 +340,52 @@ html { text-align:center; }
     margin-top: 10px;
     font-size: 11px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
+.container .front-division .first-front-division .account-form label{
+    color: black;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
 
 .container .front-division .first-front-division .account-form input[type="text"] {
 
   width: 90%;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   resize: vertical;
+}
 
+.container .front-division .first-front-division .account-form input[type="password"] {
+
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.container .front-division .first-front-division .account-form input[type="submit"]{
+    background-color: #2638d6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container .front-division .first-front-division .account-form input[type="submit"]:hover {
+  background-color: #5889e6;
 }
