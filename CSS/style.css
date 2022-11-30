@@ -389,3 +389,19 @@ html { text-align:center; }
 .container .front-division .first-front-division .account-form input[type="submit"]:hover {
   background-color: #5889e6;
 }
+
+.container .front-division .first-front-division .account-form .noticemessage {
+    
+    color: #070606;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.container .front-division .first-front-division .account-form .condition1, .container .front-division .first-front-division .account-form .condition2{
+    
+    color: #070606;
+    font-size: 11px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
